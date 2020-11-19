@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>TIMER</title>
+<script type="text/javascript"> 
+function time_title(){
+    var refresh=1000;
+    _r = setTimeout('time_title()',refresh);
+    var _title = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"}).split(" ")[1];
+    document.title = _title;
+}
+</script>
+</head>
+<body onload=time_title();>
+</body>
+</html>
